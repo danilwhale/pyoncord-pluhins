@@ -4,7 +4,6 @@ import { DEFAULT_FORMAT, insertWatermarkInMessage } from "./utils/formatter";
 import { before, unpatchAll } from "./utils/patching_shit";
 
 if (!storage.watermark) storage.watermark = DEFAULT_FORMAT
-if (!storage.insertAfter) storage.insertAfter = true
 
 before("sendMessage", findByProps("sendMessage", "receiveMessage"), (args) => insertWatermarkInMessage(args[1]))
 before("uploadLocalFiles", findByProps("uploadLocalFiles"), (args) => insertWatermarkInMessage(args[0].parsedMessage))
