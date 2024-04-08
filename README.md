@@ -1,7 +1,8 @@
-# Vendetta Plugins Template
-This repo contains a template for creating [Vendetta](https://github.com/vendetta-mod/Vendetta) plugins.
+# pyoncord pluhins
+some plhuins for [pyoncor](https://github.com/pyoncord/Pyoncord)
 
-# How to install?
-Paste a plugin URL into the Plugins page of Vendetta, following a basic format of:
-
+# how to install
 https://danilwhale.github.io/pyoncord-pluhins/`PLUGIN_NAME`
+
+## plugins catalog:
+- MessageMark - Formats your message to specified format
