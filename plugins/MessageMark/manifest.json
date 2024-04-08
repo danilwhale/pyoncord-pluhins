@@ -1,6 +1,6 @@
 {
     "name": "MessageMark",
-    "description": "Appends watermark to your message",
+    "description": "Formats your message using specified format",
     "authors": [
         {
             "name": "danilwhale",
@@ -9,6 +9,6 @@
     ],
     "main": "src/index.ts",
     "vendetta": {
-        "icon": "ic_badge_staff"
+        "icon": "ic_message_edit"
     }
 }

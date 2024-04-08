@@ -1,21 +1,18 @@
 import { storage } from "@vendetta/plugin";
 import { Message } from "./def";
 
-export const DEFAULT_WATERMARK = "Sent from Pyoncord"
+export const DEFAULT_FORMAT = "> Sent from Pyoncord\n$1"
 
-export function getWatermark(): string {
+export function getFormat(): string {
     return storage.watermark.length < 1
-        ? DEFAULT_WATERMARK
+        ? DEFAULT_FORMAT
         : storage.watermark
 }
 
 export function insertWatermarkInMessage(message: Message): void {
-    message.content = insertWatermarkInText(message.content)
+    message.content = formatText(message.content)
 }
 
-export function insertWatermarkInText(text: string): string {
-    if (storage.insertAfter)
-        return text + "\n" + getWatermark()
-    else
-        return getWatermark() + "\n" + text
+export function formatText(text: string): string {
+    return getFormat().replaceAll("$1", text)
 }
