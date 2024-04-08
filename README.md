@@ -5,4 +5,4 @@ some plhuins for [pyoncor](https://github.com/pyoncord/Pyoncord)
 https://danilwhale.github.io/pyoncord-pluhins/`PLUGIN_NAME`
 
 ## plugins catalog:
-- MessageMark - Formats your message to specified format
+- MessageMark - Formats your message using specified format
