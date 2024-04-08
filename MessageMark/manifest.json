@@ -1,1 +1,1 @@
-{"name":"MessageMark","description":"Appends watermark to your message","authors":[{"name":"danilwhale","id":"568756569261604885"}],"main":"index.js","vendetta":{"icon":"ic_badge_staff"},"hash":"0afa3c2d9099ff15db4f9b8f7289cf48e3b5e2082a9c2f3ac76631ce8129c907"}
+{"name":"MessageMark","description":"Formats your message using specified format","authors":[{"name":"danilwhale","id":"568756569261604885"}],"main":"index.js","vendetta":{"icon":"ic_message_edit"},"hash":"ef0e61e5523830d36b5e860237809e2a4a346bc33f8381c75ea783ca84037b27"}
