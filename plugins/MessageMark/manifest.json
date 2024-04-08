@@ -1,0 +1,14 @@
+{
+    "name": "MessageMark",
+    "description": "Appends watermark to your message",
+    "authors": [
+        {
+            "name": "danilwhale",
+            "id": "568756569261604885"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_badge_staff"
+    }
+}
