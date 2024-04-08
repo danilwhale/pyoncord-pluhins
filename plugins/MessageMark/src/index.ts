@@ -1,8 +1,7 @@
 import { storage } from "@vendetta/plugin";
-import { before, unpatchAll } from "./whatthefuckisthis";
 import { findByProps } from "@vendetta/metro";
-import { Message } from "./def";
-import { insertWatermarkInMessage } from "./watermarker";
+import { insertWatermarkInMessage } from "./utils/formatter";
+import { before, unpatchAll } from "./utils/patching_shit";
 
 if (!storage.watermark) storage.watermark = "Sent from Pyoncord"
 if (!storage.insertAfter) storage.insertAfter = true

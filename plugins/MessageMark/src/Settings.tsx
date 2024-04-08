@@ -2,8 +2,7 @@ import { storage } from "@vendetta/plugin";
 import { useProxy } from "@vendetta/storage";
 import { Forms, General } from "@vendetta/ui/components";
 import React from "react";
-import { DEFAULT_FORMAT, formatText } from "./watermarker";
-import { useThemedColor } from "./whatthefuckisthis";
+import { DEFAULT_FORMAT, formatText } from "./utils/formatter";
 import { findByProps } from "@vendetta/metro";
 
 const { FormDivider, FormInput, FormRadioRow, FormRow } = Forms;
@@ -30,12 +29,6 @@ export default () => {
 
             <TableRowGroup title="Preview">
                 <FormRow
-                    style={{
-                        margin: 10,
-                        padding: 15,
-                        borderRadius: 20,
-                        backgroundColor: useThemedColor("BACKGROUND_MESSAGE_HOVER")
-                    }} 
                     label={formatText("meow")}/>
             </TableRowGroup>
         </ScrollView>

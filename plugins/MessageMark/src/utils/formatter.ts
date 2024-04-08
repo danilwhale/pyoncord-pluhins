@@ -1,5 +1,5 @@
 import { storage } from "@vendetta/plugin";
-import { Message } from "./def";
+import { Message } from "../def";
 
 export const DEFAULT_FORMAT = "> Sent from Pyoncord\n$1"
 
